@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.impact-section {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(3, 75, 80);
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.impact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.impact-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #e0e0e0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.stat-card {
+  background-color: rgba(39, 111, 118, 0.606);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  background-color: #ffc107;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(3, 75, 80);
+  font-weight: 700;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffc107;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.stat-desc {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  padding: 0 0.5rem;
+}

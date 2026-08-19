@@ -1,0 +1,6 @@
+.env
+.htaccess
+build/
+build.zip
+TECHNICAL_PROGRESS_REPORT.md
+node_modules/

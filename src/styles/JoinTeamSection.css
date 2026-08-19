@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.join-team-section {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #e6eff8; /* background similar to UI */
+}
+
+.join-team-card {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(135deg, #008fa3, #00c396);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.join-team-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-team-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.join-team-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  color: #004d66;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-team-button:hover {
+  background-color: #f0f0f0;
+}
+
+.button-icon {
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .join-team-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .join-team-title {
+    font-size: 1.75rem;
+  }
+
+  .join-team-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-team-card {
+    padding: 2rem 1rem;
+  }
+
+  .join-team-title {
+    font-size: 1.5rem;
+  }
+
+  .join-team-text {
+    font-size: 0.95rem;
+  }
+
+  .join-team-button {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}

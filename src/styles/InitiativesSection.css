@@ -1,0 +1,103 @@
+/* InitiativesSection.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.initiatives-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.initiative-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #f9f9f9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+}
+
+.initiative-text {
+  flex: 1 1 400px;
+}
+
+.initiative-text h2 {
+  font-size: 1.6rem;
+  color: #105a2a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.program-check-icon {
+  color: #16a34a;
+}
+
+.initiative-text p {
+  margin: 1rem 0;
+  color: #333;
+}
+
+.impact-box {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.impact-box div {
+  background: #f1f1f1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.initiative-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.initiative-text ul li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.initiative-image {
+  flex: 1 1 300px;
+}
+
+.initiative-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .initiative-card {
+    flex-direction: column;
+  }
+
+  .impact-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

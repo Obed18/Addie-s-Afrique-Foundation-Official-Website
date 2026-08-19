@@ -1,0 +1,96 @@
+.questions-container {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.questions-heading {
+  font-size: 2rem;
+  color: #125c2f;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.questions-subtext {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.questions-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 360px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.question-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  background-color: #125c2f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.questions-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #125c2f;
+}
+
+.questions-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.email-link {
+  color: #125c2f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.follow-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid #125c2f;
+  border-radius: 0.5rem;
+  color: #125c2f;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.follow-btn:hover {
+  background-color: #125c2f;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .questions-cards {
+    flex-direction: row;
+  }
+}

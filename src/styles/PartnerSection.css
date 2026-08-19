@@ -1,0 +1,379 @@
+.partner-wrapper {
+  font-family: "Poppins", sans-serif;
+  background: #e9edf3;
+  padding: 60px 20px 80px;
+}
+
+/* FOLLOW SECTION */
+.follow-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.follow-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.social-icon.fb {
+  background: #1877f2;
+}
+
+.social-icon.x {
+  background: #000;
+}
+
+.social-icon.ig {
+  background: #e1306c;
+}
+
+.social-icon.tt {
+  background: #000;
+}
+
+.social-icon.yt {
+  background: #e20303;
+}
+
+
+/* CARD */
+.partner-card {
+  max-width: 1150px;
+  margin: 0 auto;
+  background: #c2f3f3;
+  padding: 50px 40px 45px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.partner-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #0f4f4f;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.partner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.form-group input,
+.form-group select {
+  height: 54px;
+  border-radius: 30px;
+  border: 1.5px solid #2f5d5d;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  background: transparent;
+}
+.form-amount-group input,
+.form-amount-group select {
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0f4f4f;
+  box-shadow: 0 0 0 2px rgba(15, 79, 79, 0.15);
+}
+.formmount-group input:focus,
+.form-amount-group select:focus {
+  border-color: #0f4f4f;
+  box-shadow: 0 0 0 2px rgba(15, 79, 79, 0.15);
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 10px;
+  width: 260px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  background: #0f4f4f;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .partner-title {
+    font-size: 34px;
+  }
+
+  .partner-card {
+    padding: 40px 1rem;
+  }
+  .checkbox-types-options{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 762px){
+  .checkbox-options{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .follow-title {
+    font-size: 26px;
+  }
+
+  .partner-title {
+    font-size: 26px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+.partner-success-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.success-icon {
+  color: #01DE10; /* Your foundation green */
+  margin-bottom: 20px;
+}
+
+.partner-success-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.partner-success-container p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.success-note {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #01DE10;
+}
+/* Checkbox Section Styling */
+
+.checkbox-group {
+  margin-top: 20px;
+}
+
+/* .checkbox-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+} */
+
+/* .checkbox-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+} */
+
+.checkbox-options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Consent */
+
+.consent-box {
+  margin-top: 25px;
+  font-size: 20;
+}
+
+.consent-box label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #0f4f4f;
+  font-weight: 600;
+}
+
+.consent-box input {
+  margin-top: 4px;
+}
+.main-label{
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f4f4f;
+}
+/* Larger consent checkbox */
+
+.consent-box input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  cursor: pointer;
+  accent-color: #01DE10; /* optional if you want it green */
+}
+
+.partner-subtitle{
+  text-align: center;
+}
+.partner-description{
+  text-align: center;
+}
+
+/* Amount header */
+.amount-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+
+.currency-box:hover{
+  border-color:#01DE10;
+}
+
+/* Currency text */
+.currency-label{
+  font-size:14px;
+  font-weight:500;
+  color:#555;
+}
+
+/* Dropdown */
+.currency-dropdown{
+  border:none;
+  outline:none;
+  background:transparent;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+}
+/* Hover effect */
+.currency-dropdown:hover {
+  border-color: #2ecc71;
+}
+
+/* Focus style */
+.currency-dropdown:focus {
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2);
+}
+
+/* Amount options layout */
+.checkbox-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Radio labels */
+.checkbox-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f7f7f7;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.checkbox-options label:hover {
+  background: #f0f0f0;
+}
+
+/* Currency container */
+.currency-box{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:8px 12px;
+  width:fit-content;
+  background:white;
+  margin-bottom:12px;
+  transition:all 0.25s ease;
+}
+
+.other-input{
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 12px;
+  width: 275px;
+}
+@media (max-width: 762px) {
+  .partner-title {
+    font-size: 1rem;
+  }
+  .partner-subtitle{
+    font-size: 0.8rem;
+  }
+  .partner-description{
+    font-size: 0.6rem;
+  }
+  .consent-box label {
+  font-size: 0.8rem;
+}
+.partner-wrapper{
+  padding: 0rem;
+}
+  .follow-title {
+    padding-top: 1.3rem;
+  }
+}

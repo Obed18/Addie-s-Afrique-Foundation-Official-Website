@@ -1,0 +1,42 @@
+/* src/components/SplashScreen.css */
+
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; /* or your brand color */
+}
+
+.splash-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.pulse {
+  animation: pulseAnim 1s infinite;
+}
+
+@keyframes pulseAnim {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.spin {
+  animation: spinAnim 2s linear;
+}
+
+@keyframes spinAnim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

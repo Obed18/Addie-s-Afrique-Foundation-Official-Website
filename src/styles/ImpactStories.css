@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.impact-stories-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.impact-stories-title {
+  font-size: 2.5rem;
+  color: #125c2e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.impact-stories-subtitle {
+  color: #2b2b2b;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.testimonial-card {
+  max-width: 900px;
+  background: white;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: #e6b400;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #2e3a59;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.testimonial-person{
+  display: flex;
+}
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  flex: 1;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.user-name {
+  color: #1b8436;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-role,
+.user-location {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: 1px solid #1b8436;
+  color: #1b8436;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #eaf7ef;
+}
+
+.pagination-dots {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #125c2e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.testimonial-card {
+  padding: 30px 21px;
+}
+.nav-buttons {
+    margin: auto;
+    margin-top: 1rem;
+}
+.subscribe-title {
+    font-size: 1.8rem;
+}
+.subscribe-subtext {
+    font-size: 1rem;
+}
+}

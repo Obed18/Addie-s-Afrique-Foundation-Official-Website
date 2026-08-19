@@ -1,0 +1,95 @@
+/* ImpactPrograms.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.impact-program-section {
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.impact-program-title {
+  color: #14532d;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.impact-program-subtitle {
+  color: #475569;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.program-cards {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.program-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.program-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.program-content h3 {
+  color: rgb(3, 75, 80);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.program-content p {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program-stats {
+  color: #f59e0b;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.explore-btn {
+  margin-top: 3rem;
+  background-color: rgb(3, 75, 80);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #166534;
+}
+
+.impact-program-container {
+  max-width: 1200px;
+  margin: auto;
+}

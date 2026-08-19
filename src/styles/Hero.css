@@ -1,0 +1,157 @@
+/* HeroSection.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.home-hero-section {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-top: 5rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  background: url("../assets/hero-img.jpg") no-repeat center center/cover;
+}
+.home-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at top left, #0b8e3754, #0ade513e),
+   #144c275b;
+}
+
+
+.overlay {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to right, #0b8e36 0%, #0ade50);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0rem;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+.hero-title .highlight {
+  color: #fbc108;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.donate-btn {
+  background-color: rgb(3, 75, 80);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid white;
+  white-space: nowrap;
+}
+
+.donate-btn:hover {
+  background-color: #02301e;
+}
+.involved-button {
+  background-color: White;
+  color: rgb(3, 75, 80);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid rgb(3, 75, 80);
+  white-space: nowrap;
+}
+.involved-button:hover {
+  opacity: 0.5;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: rgba(8, 66, 70, 0.721);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  width: 150px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbc108;
+}
+
+.stat-box p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+  }
+}

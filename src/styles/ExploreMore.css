@@ -1,0 +1,60 @@
+/* src/components/ExploreMore.css */
+
+.explore-section {
+  background-color: rgb(3, 75, 80);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.explore-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(39, 111, 118, 0.606);
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 250px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  font-weight: 400;
+  color: #e4e4e4;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+}

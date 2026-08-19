@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: white;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  background-color: white;
+}
+
+.nav-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-img {
+  width: 70px;
+  height: 70px;
+}
+.nav-img img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 1rem;
+}
+.logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgb(3, 75, 80);
+  /* font-family: "WDXL Lubrifont TC", sans-serif; */
+}
+.left-logo span {
+  color: black;
+  /* font-family: "WDXL Lubrifont TC", sans-serif; */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 8px 16px rgba(129, 129, 129, 0.102);
+  z-index: 10;
+  white-space: nowrap; /* Prevent line breaks */
+  min-width: max-content;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+  color: rgb(3, 75, 80);
+  cursor: pointer;
+}
+
+.side-donate-link {
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.donate-link {
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .donate-link {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  color: rgb(3, 75, 80);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-sidebar.open {
+  right: 0;
+}
+
+.mobile-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.mobile-sidebar ul li a,
+.mobile-sidebar ul li span {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+
+.mobile-sidebar ul li ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+  }
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+.logo-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  color: rgb(3, 75, 80);
+}
+.left-logo span {
+  color: black;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+}
+
+/* Overlay background when sidebar is open */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1000;
+}
+
+/* Close Icon in Sidebar */
+.sidebar-close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.dropdown-menu {
+  display: none;
+  /* your existing styles */
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}

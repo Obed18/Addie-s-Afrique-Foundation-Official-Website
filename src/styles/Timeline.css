@@ -1,0 +1,121 @@
+/* src/styles/Timeline.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.timeline-section {
+  font-family: "Poppins", sans-serif;
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0b6c2f;
+}
+
+.timeline-subheading {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #007f39;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-card {
+  background: #f4f6f7;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  background-color: #f4f6f7;
+  border: 3px solid #007f39;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.timeline-item.left .timeline-card::before {
+  right: -38px;
+}
+
+.timeline-item.right .timeline-card::before {
+  left: -38px;
+}
+
+.timeline-year {
+  font-weight: 600;
+  color: #f4a300;
+  font-size: 1.1rem;
+}
+
+.timeline-title {
+  margin: 5px 0;
+  font-weight: 600;
+  color: #007f39;
+}
+
+.timeline-description {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-container {
+    gap: 40px;
+  }
+
+  .timeline-item {
+    justify-content: center !important;
+  }
+
+  .timeline-card::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
