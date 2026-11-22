@@ -32,6 +32,9 @@ jobs:
 
       - name: Build website
         run: npm run build
+        env:
+          REACT_APP_SUPABASE_URL: ${{ secrets.REACT_APP_SUPABASE_URL }}
+          REACT_APP_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.REACT_APP_SUPABASE_PUBLISHABLE_KEY }}
 
       - name: Upload build to Namecheap via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6

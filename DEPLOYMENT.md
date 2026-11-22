@@ -11,8 +11,12 @@ In the GitHub repository, open **Settings → Secrets and variables → Actions*
 | `NAMECHEAP_FTP_SERVER` | The Namecheap hosting server hostname, from your hosting welcome email or cPanel |
 | `NAMECHEAP_FTP_USERNAME` | Your Namecheap cPanel username (SFTP does not use a separate FTP account username) |
 | `NAMECHEAP_FTP_PASSWORD` | Your Namecheap cPanel password |
-| `NAMECHEAP_FTP_SERVER_DIR` | Your SFTP web-root directory, commonly `/home/CPANEL_USERNAME/public_html/` or `public_html/` |
+| `NAMECHEAP_FTP_SERVER_DIR` | `/home/CPANEL_USERNAME/public_html/` for the main domain, with `CPANEL_USERNAME` replaced by your actual cPanel username |
+| `REACT_APP_SUPABASE_URL` | The value of `REACT_APP_SUPABASE_URL` from your local `.env` file |
+| `REACT_APP_SUPABASE_PUBLISHABLE_KEY` | The value of `REACT_APP_SUPABASE_PUBLISHABLE_KEY` from your local `.env` file |
 
-SFTP uses port `21098` on Namecheap shared hosting. Use the exact hosting server hostname and remote directory shown in Namecheap cPanel. Do not enter the placeholder `ftp.your-domain.com`. If the domain is an add-on domain, its directory may be different from `public_html/`.
+SFTP uses port `21098` on Namecheap shared hosting and starts in the account's `/home` area. For the main domain, use the absolute path `/home/CPANEL_USERNAME/public_html/`; for an add-on domain, use its document-root path under `/home/CPANEL_USERNAME/`. Replace `CPANEL_USERNAME` with the actual cPanel username. Do not enter the placeholder `ftp.your-domain.com`.
+
+The Supabase secrets are injected only during the production build. Do not commit `.env` to the repository.
 
 After adding the secrets, push to `main` and check the workflow under the repository's **Actions** tab.
