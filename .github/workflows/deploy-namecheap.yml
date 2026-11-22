@@ -33,16 +33,14 @@ jobs:
       - name: Build website
         run: npm run build
 
-      - name: Upload build to Namecheap
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Upload build to Namecheap via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           server: ${{ secrets.NAMECHEAP_FTP_SERVER }}
           username: ${{ secrets.NAMECHEAP_FTP_USERNAME }}
           password: ${{ secrets.NAMECHEAP_FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
-          local-dir: ./build/
-          server-dir: ${{ secrets.NAMECHEAP_FTP_SERVER_DIR }}
-          exclude: |
-            **/.git*/**
-            **/.git*
+          port: 21098
+          local_path: ./build/*
+          remote_path: ${{ secrets.NAMECHEAP_FTP_SERVER_DIR }}
+          sftp_only: true
+          sftpArgs: -o ConnectTimeout=10
