@@ -27,11 +27,7 @@ const Footer = () => {
         >
           <div className="footer-logo">
             <div className="Footer-logo">
-              <img src="/FLOGO.jpg" alt="Addie's Afrique Foundation" />
-            </div>
-            <div className="Footer-logo-text">
-              <h2>Addie's Afrique</h2>
-              <p className="subtitle">Foundation</p>
+              <img src="/aaf-footer-logo.png" alt="Addie's Afrique Foundation" />
             </div>
           </div>
           <p className="description">

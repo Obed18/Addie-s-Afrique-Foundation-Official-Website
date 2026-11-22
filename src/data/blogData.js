@@ -1,5 +1,101 @@
 const blogPosts = [
 {
+  id: "lets-hit-the-street-campaign-2026",
+  category: "Child Advocacy",
+  title: "Let's Hit the Street 2026 – Advocating for Every Child, Every Mind, and Every Ability",
+  author: "Addie's Afrique Foundation",
+  date: "September 25, 2026",
+  readTime: "4 min read",
+  tags: [
+    "Child Advocacy",
+    "Children's Mental Health",
+    "Inclusive Education",
+    "Disability Inclusion",
+    "Community Engagement",
+    "Child Protection",
+  ],
+  sections: [
+    {
+      image: "/lhts872.jpg",
+      content: [
+        "On 25th September 2026, Addie's Afrique Foundation took its advocacy efforts to the streets of Odoyefe in the Ashanti Region of Ghana through its Let's Hit the Street 2026 campaign. The initiative was centred on raising awareness about children's rights, mental health, disability inclusion, and the importance of creating supportive environments where every child can grow, learn, and thrive.",
+        "The campaign provided an opportunity to engage with the community on issues affecting children, particularly the importance of recognising their emotional and psychological well-being alongside their physical and academic development. It reinforced the understanding that every child, regardless of their abilities, background, or circumstances, deserves care, dignity, protection, and equal opportunities.",
+        "A key focus of this year's campaign was advocating for children with and without disabilities, emphasising the need for inclusive education and stronger community support systems. Through public engagement and awareness, the initiative encouraged a more compassionate and informed approach to understanding the unique needs of children and ensuring that no child is excluded or left behind.",
+        "At Addie's Afrique Foundation, we believe that meaningful change begins when communities become aware, conversations are encouraged, and individuals recognise their responsibility towards the well-being of children. Let's Hit the Street 2026 was another opportunity to take this message beyond the classroom and into the heart of the community."
+      ],
+    },
+    {
+      heading: "CAMPAIGN HIGHLIGHTS",
+      content: [
+        "The Let's Hit the Street 2026 campaign focused on key areas of child advocacy and community awareness:",
+      ],
+      image: "/lhts931.jpg",
+      list: [
+        "Raised awareness about children's mental and emotional health and the importance of providing appropriate support.",
+        "Advocated for the rights, dignity, and inclusion of children with and without disabilities.",
+        "Promoted inclusive education and equal learning opportunities for every child.",
+        "Encouraged community conversations about the challenges affecting children's growth and development.",
+        "Highlighted the importance of supportive environments for children's academic, social, and emotional well-being.",
+        "Encouraged collective responsibility in protecting, supporting, and empowering children.",
+      ],
+    },
+    {
+      heading: "WHY CHILDREN'S MENTAL HEALTH MATTERS",
+      content: [
+        "A child's well-being extends beyond physical health and academic performance. Mental and emotional health play a significant role in how children learn, build relationships, express themselves, and navigate everyday challenges.",
+        "Children need environments where they feel safe, heard, accepted, and supported. Without adequate attention to their emotional and psychological needs, challenges can affect their confidence, development, relationships, and ability to participate fully in school and society.",
+        "Through this campaign, Addie's Afrique Foundation reaffirmed the importance of making children's mental health a shared community priority. Parents, teachers, caregivers, community leaders, and other stakeholders all have a role to play in recognising children's needs and creating spaces where they can thrive."
+      ],
+      image: "/lhts803.jpg",
+    },
+    {
+      heading: "ADVOCATING FOR INCLUSION AND EQUAL OPPORTUNITIES",
+      content: [
+        "Every child deserves the opportunity to learn, participate, and reach their full potential, regardless of whether they have a disability. However, children with disabilities can face barriers that limit their access to education, social participation, and essential support systems.",
+        "The campaign highlighted the importance of inclusive education and the need for communities to embrace children of all abilities. Inclusion goes beyond allowing children to participate; it means creating environments where every child is respected, accommodated, valued, and given the opportunity to succeed.",
+        "By encouraging awareness and understanding, Let's Hit the Street 2026 sought to reinforce the message that disability should never be a reason for discrimination, neglect, or exclusion. Every child deserves to belong."
+      ],
+      image: "/lhts933.jpg",
+      list: [
+        "Promote equal access to quality education for children of all abilities.",
+        "Encourage acceptance and understanding of children with disabilities.",
+        "Challenge discrimination, exclusion, and negative perceptions surrounding disability.",
+        "Strengthen awareness of the support systems children need to thrive.",
+        "Encourage families, schools, and communities to create inclusive environments.",
+      ],
+    },
+    {
+      heading: "THE ROLE OF THE COMMUNITY",
+      content: [
+        "Creating a better future for children cannot be the responsibility of parents or educational institutions alone. It requires the collective commitment of entire communities.",
+        "Community members have an important role in identifying challenges affecting children, supporting families, encouraging inclusive practices, and ensuring that children's voices and concerns are not overlooked.",
+        "The Let's Hit the Street campaign served as a reminder that advocacy must extend beyond formal institutions. It must reach everyday spaces, influence attitudes, encourage conversations, and inspire people to take responsibility for the children within their communities."
+      ],
+      image: "/lhts812.jpg",
+    },
+    {
+      heading: "OUR COMMITMENT TO EVERY CHILD",
+      content: [
+        "At Addie's Afrique Foundation, our commitment to children goes beyond raising awareness. We remain dedicated to advocating for their rights, promoting their mental and emotional well-being, supporting inclusive education, and strengthening the systems that enable them to develop and succeed.",
+        "Let's Hit the Street 2026 reflects our belief that every child matters and that every community has a responsibility to protect, nurture, and empower the next generation.",
+        "As we continue our advocacy efforts, we invite parents, educators, organisations, community leaders, and individuals to become active voices for children. Together, we can build communities where every child is seen, heard, supported, and given the opportunity to reach their full potential.",
+        "\"A child's well-being matters. Creating safer and more supportive communities begins with awareness, understanding, and action.\""
+      ],
+      image: "/lhts892.jpg",
+    },
+  ],
+  prev: {
+    id: "one-female-one-pad-project",
+    title: "One Female One Sanitary Pad",
+    image: "/Pads.jpg",
+  },
+  next: {
+    id: "one-female-one-sanitary-pad-2026",
+    title: "One Female, One Sanitary Pad Initiative – 2026 Impact Report",
+    image: "/1f1s26.jpg",
+  },
+},
+{
   id: "one-female-one-sanitary-pad-2026",
   category: "Hygiene",
   title: "One Female, One Sanitary Pad Initiative – 2026 Impact Report",
@@ -86,9 +182,9 @@ const blogPosts = [
     },
   ],
   prev: {
-    id: "one-female-one-pad-project",
-    title: "One Female One Sanitary Pad",
-    image: "/Pads.jpg",
+    id: "lets-hit-the-street-campaign-2026",
+    title: "Let's Hit the Street 2026 – Advocating for Every Child, Every Mind, and Every Ability",
+    image: "/lhts872.jpg",
   },
   next: {
     id: "1-female-1-sanitary-pad-project",
@@ -169,9 +265,122 @@ const blogPosts = [
     image: "/1f1s26.jpeg",
   },
   next: {
+    id: "little-minds-matter-lets-hit-the-street-2025",
+    title: "Let's Hit The Street 2025: Little Minds Matter – Promoting Children's Mental Health Through Community Advocacy",
+    image: "/lmm26.jpg",
+  },
+},
+{
+  id: "little-minds-matter-lets-hit-the-street-2025",
+  category: "Child Advocacy",
+  title: "Let's Hit The Street 2025: Little Minds Matter – Promoting Children's Mental Health Through Community Advocacy",
+  author: "Addie's Afrique Foundation",
+  date: "September 26, 2025",
+  readTime: "4 min read",
+  tags: [
+    "Little Minds Matter",
+    "Child Mental Health",
+    "Child Advocacy",
+    "Positive Parenting",
+    "Community Engagement",
+    "Mental Health Awareness",
+    "SDGs",
+  ],
+  sections: [
+    {
+      image: "/lmm26.jpg",
+      content: [
+        "On 26th September 2025, Addie's Afrique Foundation took its child advocacy efforts to Brofoyeduru in the Central Region of Ghana through its Let's Hit the Street campaign, under the theme \"Little Minds Matter.\" The initiative focused on raising awareness about children's mental health and encouraging communities to recognise the importance of nurturing the emotional and psychological well-being of children.",
+        "Little Minds Matter was founded on the understanding that children's mental health deserves the same attention and care as their physical health. Children experience emotions, challenges, fears, and pressures that can significantly influence their development. However, these experiences are sometimes overlooked or misunderstood. Through this initiative, the Foundation sought to create awareness, encourage open conversations, and equip community members with a better understanding of how to support children's mental and emotional well-being.",
+        "The campaign engaged over 100 individuals within the Brofoyeduru community, creating an opportunity for dialogue and learning around issues affecting children. It explored the importance of positive parenting, the influence of a child's environment, the recognition of early warning signs of mental health challenges, and the need to break the stigma surrounding children's mental health.",
+        "Through Little Minds Matter, Addie's Afrique Foundation reinforced a simple but important message: children may not always have the words to express what they are experiencing, but their emotions, behaviours, and experiences matter. Every child deserves to grow in an environment where they are understood, supported, protected, and encouraged to thrive."
+      ],
+    },
+    {
+      heading: "PROJECT IMPACT",
+      content: [
+        "The Little Minds Matter campaign made an important contribution to child mental health awareness and community advocacy in Brofoyeduru. Key project highlights included:",
+      ],
+      image: "/lmm54.jpg",
+      list: [
+        "Reached over 100 individuals through community engagement and mental health advocacy.",
+        "Engaged one community, Brofoyeduru, in the Central Region of Ghana.",
+        "Raised awareness about the importance of children's mental and emotional well-being.",
+        "Encouraged conversations about positive parenting and supportive family environments.",
+        "Promoted the recognition of early signs and warning signals associated with mental health challenges in children.",
+        "Highlighted the influence of home, school, and community environments on children's development.",
+        "Encouraged individuals to challenge stigma and misconceptions surrounding children's mental health.",
+        "Emphasised the importance of early intervention, support, and appropriate care for children."
+      ],
+    },
+    {
+      heading: "KEY AREAS OF ADVOCACY",
+      content: [
+        "The campaign addressed important areas that influence children's mental health and overall development, encouraging community members to become more intentional about how they understand, treat, and support children."
+      ],
+      image: "/lmm17.jpg",
+      list: [
+        "Community Engagement & Dialogue - Encouraging open conversations and community participation in addressing children's mental health challenges.",
+        "Understanding Child Mental Health - Building awareness of children's emotional and psychological well-being and why it matters.",
+        "Early Signs & Warning Signals - Highlighting the importance of recognising changes in children's behaviour, emotions, and social interactions that may indicate distress.",
+        "Positive Parenting Techniques - Promoting nurturing, patient, supportive, and constructive approaches to raising children.",
+        "Impact of Environment on Children - Exploring how family relationships, schools, social interactions, and community environments shape children's mental and emotional development.",
+        "Breaking Stigma - Challenging misconceptions and encouraging more open, compassionate conversations about mental health.",
+        "Early Intervention & Support - Emphasising the importance of identifying concerns early and ensuring children receive appropriate care and support."
+      ],
+    },
+    {
+      heading: "WHY LITTLE MINDS MATTER",
+      content: [
+        "Childhood is a critical stage of growth and development. Beyond physical growth and academic achievement, children need emotional security, positive relationships, understanding, and opportunities to express themselves. Their mental well-being influences how they learn, communicate, build relationships, respond to challenges, and develop confidence.",
+        "Unfortunately, children's emotional struggles can sometimes be dismissed as stubbornness, disobedience, or attention-seeking behaviour. When these experiences are misunderstood or ignored, children may struggle without receiving the support they need.",
+        "Little Minds Matter seeks to change this narrative by encouraging parents, caregivers, educators, and communities to pay closer attention to children's emotional needs. It reminds us that listening to children, understanding their behaviour, providing reassurance, and creating safe spaces for expression are essential parts of nurturing healthy development.",
+        "A child who feels heard, valued, and supported is better positioned to develop confidence, resilience, and healthy relationships. Investing in children's mental health is therefore an investment in stronger families, healthier communities, and a better future."
+      ],
+      image: "/lmm8.jpg",
+    },
+    {
+      heading: "TARGETED SDG GOALS",
+      content: [
+        "The Little Minds Matter initiative contributes to the achievement of key United Nations Sustainable Development Goals (SDGs), particularly those that promote health, education, and inclusive communities."
+      ],
+      image: "/lmm24.jpg",
+      list: [
+        "SDG 3: Good Health and Well-being - Promotes awareness of children's mental and emotional health, encourages early intervention, and supports the importance of healthy childhood development.",
+        "SDG 4: Quality Education - Recognises that children's mental and emotional well-being influences their ability to learn, participate, and succeed in educational environments.",
+        "SDG 10: Reduced Inequalities - Advocates for equal recognition, care, and support for children, regardless of their background or circumstances.",
+        "SDG 16: Peace, Justice and Strong Institutions - Supports the protection and well-being of children by encouraging safer, more supportive environments and greater awareness of their needs."
+      ],
+    },
+    {
+      heading: "THE ROLE OF PARENTS, CAREGIVERS, AND COMMUNITIES",
+      content: [
+        "Supporting children's mental health is a shared responsibility. Parents and caregivers play a particularly important role in creating environments where children feel safe enough to communicate their emotions and experiences without fear of judgment or rejection.",
+        "Educators and community members also contribute significantly to children's development. By recognising behavioural changes, encouraging positive interactions, addressing harmful practices, and promoting understanding, they can help create environments that support children's well-being.",
+        "The campaign highlighted the need to move beyond simply telling children how to behave and instead make a conscious effort to understand why they behave the way they do. Children need guidance, patience, encouragement, and consistent emotional support."
+      ],
+      image: "/lmm19.jpg",
+    },
+    {
+      heading: "OUR COMMITMENT TO CHILDREN'S WELL-BEING",
+      content: [
+        "At Addie's Afrique Foundation, we believe that every child deserves the opportunity to grow in an environment that supports their mental, emotional, physical, and social development. Little Minds Matter reflects our continued commitment to placing children at the centre of community advocacy and development.",
+        "The campaign in Brofoyeduru was a reminder that meaningful change begins with awareness, understanding, and intentional action. When communities recognise that children's mental health matters, they become better equipped to create supportive spaces where children can express themselves, develop confidence, and reach their full potential.",
+        "As we continue our work in child advocacy, we encourage parents, caregivers, educators, organisations, and community leaders to become active advocates for children's mental health. Let us listen more, understand better, break the stigma, and create environments where every child's mind is nurtured and valued.",
+        "\"Little minds matter. Every child's feelings deserve to be heard, every child's struggles deserve understanding, and every child deserves the opportunity to thrive.\""
+      ],
+      image: "/lmm28.jpg",
+    },
+  ],
+  prev: {
+    id: "lets-hit-the-street-campaign-2026",
+    title: "Let's Hit the Street 2026 – Advocating for Every Child, Every Mind, and Every Ability",
+    image: "/lhts26.jpg",
+  },
+  next: {
     id: "a-pad-a-voice",
-    title: "Job Opportunities",
-    image: "/sttw03.jpg",
+    title: "A PAD, A VOICE, A FUTURE – THE STORY OF THE 1 FEMALE 1 SANITARY PAD PROJECT",
+    image: "/Pads.jpg",
   },
 },
 {
@@ -244,8 +453,8 @@ const blogPosts = [
   ],
   prev: {
     id: "1-female-1-sanitary-pad-project",
-    title: "Support To The West – A Rural Development Program",
-    image: "/Support1.jpg",
+    title: "One Female One Sanitary Pad Project",
+    image: "/Pads.jpg",
   },
   next: {
     id: "support-to-the-west",

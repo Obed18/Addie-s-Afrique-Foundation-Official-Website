@@ -5,6 +5,20 @@ import "../styles/Timeline.css";
 
 const timelineData = [
   {
+    year: "2026",
+    title: "One Female, One Sanitary Pad",
+    description:
+      "One Female, One Sanitary Pad is a menstrual health and hygiene advocacy initiative by Addie’s Afrique Foundation, aimed at promoting menstrual health awareness, improving access to sanitary products, and empowering girls and young women to manage their menstrual health with dignity and confidence.",
+    align: "right",
+  },
+  {
+    year: "2026",
+    title: "Let's Hit The Street",
+    description:
+      "Let's Hit The Street 2026 is a community outreach and advocacy initiative by Addie’s Afrique Foundation, focused on raising awareness, engaging communities, and driving positive social change through direct community interaction and education.",
+    align: "left",
+  },
+  {
     year: "2025",
     title: "Let's Hit The Street",
     description:

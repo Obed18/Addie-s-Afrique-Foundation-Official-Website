@@ -23,7 +23,7 @@ const staff = [
   {
     id: "samuel-akuffu",
     name: "Master Samuel Akuffu",
-    title: "Chief Financial Advisor",
+    title: "Chief Financial Advisor & Western Regional Coordiator",
     location: "Takoradi, Ghana",
     image: "/SamuelP.jpg",
     linkedin: "https://www.linkedin.com/in/samuel-a-1798791b9",

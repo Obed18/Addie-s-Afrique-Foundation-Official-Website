@@ -72,13 +72,7 @@ export default function Navbar() {
       >
         <div className="nav-left">
           <div className="nav-img">
-            <img src="/FLOGO.jpg" alt="Addie's Afrique Foundation" />
-          </div>
-          <div className="left-logo">
-            <h2 className="logo-text">
-              Addie's Afrique
-              <span className="highlight"> Foundation</span>
-            </h2>
+            <img src="/aaf-logo.png" alt="Addie's Afrique Foundation" />
           </div>
         </div>
         <ul className="nav-links">

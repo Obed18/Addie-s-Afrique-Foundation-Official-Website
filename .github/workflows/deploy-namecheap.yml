@@ -1,0 +1,48 @@
+name: Build and deploy to Namecheap
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-deployment
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Upload build to Namecheap
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.NAMECHEAP_FTP_SERVER }}
+          username: ${{ secrets.NAMECHEAP_FTP_USERNAME }}
+          password: ${{ secrets.NAMECHEAP_FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./build/
+          server-dir: ${{ secrets.NAMECHEAP_FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*/**
+            **/.git*

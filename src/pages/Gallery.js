@@ -19,14 +19,18 @@ const Gallery = () => {
     "Impact",
   ];
 
-  const galleryItems = Array.from({ length: 750 }, (_, i) => ({
-    id: i + 1,
-    src: `/gallery/gallery${i + 1}.jpg`,
-    category: "Community",
-    title: `Gallery Image ${i + 1}`,
-    description: "",
-    location: "",
-  }));
+  const galleryItems = Array.from({ length: 934 }, (_, i) => {
+    const imageNumber = 934 - i;
+
+    return {
+      id: imageNumber,
+      src: `/gallery/gallery${imageNumber}.jpg`,
+      category: "Community",
+      title: `Gallery Image ${imageNumber}`,
+      description: "",
+      location: "",
+    };
+  });
 
   const filteredItems =
     selectedCategory === "All"

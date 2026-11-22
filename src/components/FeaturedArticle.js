@@ -3,15 +3,16 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../styles/BlogSection.css";
 
+
 const featuredArticle = {
-  id: "one-female-one-sanitary-pad-2026",
-  title: "One Female, One Sanitary Pad Initiative – 2026 Impact Report",
-  author: "Addie's Afrique Fondation",
-  date: "May 28, 2026",
+  id: "lets-hit-the-street-campaign-2026",
+  title: "Let's Hit the Street 2026 – Advocating for Every Child, Every Mind, and Every Ability",
+  author: "Addie's Afrique Foundation",
+  date: "September 25, 2026",
   time: "4 min read",
   description:
-    "The One Female, One Sanitary Pad initiative, organised by Addie’s Afrique Foundation, has been running for the past three years, consistently creating meaningful impact in the lives of young girls across Ghana.",
-  image: "/1f1s26.jpg",
+    "On 25th September 2026, Addie's Afrique Foundation took its advocacy efforts to Odoyefe in the Ashanti Region of Ghana, raising awareness about children's mental health, disability inclusion, children's rights, and the importance of creating supportive environments where every child can thrive.",
+  image: "/lhts872.jpg",
 };
 
 const FeaturedArticle = ({ article = featuredArticle }) => {

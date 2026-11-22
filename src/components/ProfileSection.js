@@ -62,7 +62,7 @@ const teamData = [
   {
     id: "samuel-akuffu",
     name: "Master Samuel Akuffu",
-    role: "Financial Advisor",
+    role: "Financial Advisor & Western Regional Coordiator",
     about:
       "As the Financial Advisor of Addie’s Afrique Foundation, Samuel Akuffu oversees the foundation's finances and investments with meticulous attention. His career in accounting has been both challenging and fulfilling, and he brings his expertise to lead a team of talented, diverse, and committed finance professionals. Samuel is passionate about leaving a legacy through inspiration, motivation, and empowerment. His vision is to be remembered for his positive impact on future generations. Originally from Ghana, Samuel holds a Higher National Diploma (HND) in Accountancy from Takoradi Technical University (TTU) and completed his secondary education at Takoradi Senior High School. To expand his knowledge and skills, he has furthered his education with the Corporate Finance Institute and enhanced his digital skills through Quantum Learning. Before joining Addie’s Afrique Foundation, Samuel served as an Account Officer and currently works as a Revenue Supervisor at Sekondi Takoradi Metropolitan Assembly (STMA). His extensive experience includes roles as an Administrator at KofyJesseTv, Board Director at Spotlight Africa Awards and a Content Creator at Giant News Ghana. Samuel Akuffu’s commitment to financial excellence and his drive to inspire and empower others make him a valuable asset to Addie’s Afrique Foundation.",
     image: "/SamuelP.jpg",
